@@ -1,0 +1,35 @@
+{
+  "task_id": "task-03",
+  "domain": "computer_science",
+  "hidden_system": "64-bit MSB-first (non-reflected) byte-wise CRC register machine",
+  "model_class": {
+    "width_bits": 64,
+    "reflect_in": false,
+    "reflect_out": false,
+    "byte_injection": "message byte XORed into register bits 63..56 before eight shift steps",
+    "shift": "left",
+    "mask": "0xFFFFFFFFFFFFFFFF"
+  },
+  "answer": {
+    "POLY": 16008032544832641387,
+    "INIT": 2905338451596687491,
+    "XOROUT": 2905338451596687491
+  },
+  "answer_hex": {
+    "POLY": "0xDE27F4C90BA4596B",
+    "INIT": "0x2851D5EDB7B43883",
+    "XOROUT": "0x2851D5EDB7B43883"
+  },
+  "query_budget": 6,
+  "queries_required_by_intended_solver": 3,
+  "reference_outputs": {
+    "": "0x0000000000000000",
+    "00": "0xAE3A4BA39060CB0B",
+    "01": "0x701DBF6A9BC49260",
+    "0000": "0x87F8680FF5707BA5",
+    "ff": "0x12CF2C6CB26391B5",
+    "313233343536373839": "0x05F8D10865E59988",
+    "01020304": "0x19C0DF70BFD840C1"
+  },
+  "difficulty_target": "<= 2/8"
+}
